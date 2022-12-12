@@ -1,0 +1,376 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container{
+    max-width:1400px;
+    height:100vh;
+}
+.row{
+    width:100%;
+}
+.row:after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+[class*="col-"]{
+    float:left;
+    padding:15px;
+}
+
+[class*="col-"]{
+    width:100%;
+}
+header{
+   background-color: teal;
+   text-align: center;
+}
+.logo{
+   width:70px;
+   height:70px;
+   line-height: 70px;
+  text-align: center;
+   color:white;
+   border: 2px solid white;
+   border-radius: 50%;
+   padding-top: 10px;
+
+}
+nav ul li{
+   list-style: none;
+   display: block;
+   margin:20px 0px;
+  
+
+}
+nav ul li a{
+   display: block;
+   padding:15px 0px;
+   text-decoration: none;
+   color:white;
+   font-size: 1.3rem;
+   font-weight: bold;
+   transition: .4s;
+}
+nav ul li a:hover{
+   background-color: black;
+   border-radius: 20px;
+}
+
+#banner-section{
+   height: 450px;
+   background-image: url('photo-1559910369-3924e235c1cf.avif');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+.banner-content{
+   padding:120px 20px;
+   text-align: center;
+}
+.banner-content h1{
+   width:100%;
+   background-color: rgba(255,255,0,0.884);
+   padding:10px 0px;
+   font-size: 3rem;
+}
+.banner-content p{
+   width:300px;
+   background-color: green;
+   margin: 15px auto;
+   padding:15px 0;
+   color:white;
+   font-size: 1.3rem;
+}
+.banner-content button{
+   width:120px;
+   padding:10px;
+   background-color: crimson;
+   font-size: 1rem;
+   transition: .4s;
+   border-radius: 20px;
+}
+.banner-content button:hover{
+   transform: scale(1.1);
+   background-color: chartreuse;
+}
+
+#about-us{
+   padding:1% 0%;
+  
+}
+.about-us-container{
+   text-align: center;
+}
+.about-us-container h3{
+   font-size: 2rem;
+   margin-bottom: 10px;
+   color:crimson;
+   text-shadow: 2px 3px 5px black;
+   letter-spacing: 2px;
+
+}
+.about-us-container p{
+   text-align: justify;
+   padding:10px;
+}
+#food-menu{
+   padding:1% 0%;
+}
+.card{
+   transition: .4s;
+}
+.card-body{
+   padding:8px;
+   text-align: center;
+}
+.card-body img{
+   width:100%;
+   height: auto;
+   display: block;
+}
+.card-desc h3{
+   width:100%;
+   background-color: crimson;
+   padding:10px
+ 
+}
+.card-desc p{
+   background-color: gray;
+   padding:10px;
+   color:white;
+   font-size: 1.2rem;
+}
+.card:hover{
+   transform: scale(1.1);
+}
+#contact{
+   padding:1%;
+   background-color: darkseagreen;
+}
+.map{
+   width:100%;
+}
+.contact-details{
+   text-align: center;
+
+}
+.contact-details{
+   font-size: 1.5rem;
+}
+.contact-details p, address{
+   font-size: 1rem;
+}
+footer{
+   padding:1% 0%;
+   text-align: center;
+   background-color: hotpink;
+}
+footer p{
+   line-height: 32px;
+   color:red;
+   font-size: 1.2rem;
+   text-align: center;
+}
+.social-media{
+   text-align: center;
+
+   
+}
+.icon-style{
+   width:32px;
+   height:32px;
+   line-height: 22px;
+   border: 2px solid white;
+   border-radius: 50%;
+   color:black;
+   margin:0 10px;
+   padding-top: 5px;
+   transition: .2s;
+   text-align: center;
+   
+
+}
+.icon-style:hover{
+   transform: scale(1.2);
+   background-color: gray;
+}
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+    .col-sm-1{
+       width: 8.33%;
+    }
+    .col-sm-2{
+       width: 16.66%;
+    }
+    .col-sm-3{
+       width: 25%;
+    }
+    .col-sm-4{
+       width: 33.33%;
+    }
+    .col-sm-5{
+       width: 41.66%;
+    }
+    .col-sm-6{
+       width: 50%;
+    }
+    .col-sm-7{
+       width: 58.33%;
+    }
+    .col-sm-8{
+       width: 66.66%;
+    }
+    .col-sm-9{
+       width: 75%;
+    }
+    .col-sm-10{
+       width: 83.33%
+    }
+    .col-sm-11{
+       width: 91.66%;
+    }
+    .col-sm-12{
+       width: 100%;
+    }
+ }
+ 
+ 
+ 
+    /* medium devices (portrait tablets and large phones, 768px and up) */
+@media only screen and (min-width: 690px) {
+   .col-md-1{
+      width: 8.33%;
+   }
+   .col-md-2{
+      width: 16.66%;
+   }
+   .col-md-3{
+      width: 25%;
+   }
+   .col-md-4{
+      width: 33.33%;
+   }
+   .col-md-5{
+      width: 41.66%;
+   }
+   .col-md-6{
+      width: 50%;
+   }
+   .col-md-7{
+      width: 58.33%;
+   }
+   .col-md-8{
+      width: 66.66%;
+   }
+   .col-md-9{
+      width: 75%;
+   }
+   .col-md-10{
+      width: 83.33%
+   }
+   .col-md-11{
+      width: 91.66%;
+   }
+   .col-md-12{
+      width: 100%;
+   }
+}
+
+
+    /* medium devices (portrait tablets and large phones, 768px and up) */
+    @media only screen and (min-width: 990px) {
+        
+       .icon{
+         text-align: left;
+      }
+      nav{
+         text-align: right;
+      }
+      nav ul li{
+         display: inline-block;
+         margin: 0px 20px;
+
+      }
+
+    nav ul li a{
+      display: inline-block;
+      transform: .2s;
+
+    }
+    nav ul li a:hover{
+      transform: scale(1.2);
+      background-color: transparent;
+      text-decoration: underline;
+      color:crimson;
+    }
+      .banner-section{
+         position: relative;
+         height: 100vh;
+      }
+      .banner-content{
+         position: absolute;
+         top:50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+      }
+       
+      .banner-content h1{
+         width:600px;
+         font-size: 2.7rem;
+      }
+
+      .banner-content p{
+         width: 400px;
+         font-size: 1.4rem;
+      }
+      footer p{
+         text-align: left;
+      }
+      .social-media{
+         text-align: right;
+      }
+        .col-lg-1{
+           width: 8.33%;
+        }
+        .col-lg-2{
+           width: 16.66%;
+        }
+        .col-lg-3{
+           width: 25%;
+        }
+        .col-lg-4{
+           width: 33.33%;
+        }
+        .col-lg-5{
+           width: 41.66%;
+        }
+        .col-lg-6{
+           width: 50%;
+        }
+        .col-lg-7{
+           width: 58.33%;
+        }
+        .col-lg-8{
+           width: 66.66%;
+        }
+        .col-lg-9{
+           width: 75%;
+        }
+        .col-lg-10{
+           width: 83.33%
+        }
+        .col-lg-11{
+           width: 91.66%;
+        }
+        .col-lg-12{
+           width: 100%;
+        }
+     }
